@@ -7,6 +7,8 @@ SPHINXBUILD   = sphinx-build
 SOURCEDIR     = .
 BUILDDIR      = .
 #BUILDDIR      = _build
+#STATICDIR   = _static
+#TEMPLATEDIR   = _templates
 
 # Put it first so that "make" without argument is like "make help".
 help:
