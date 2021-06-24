@@ -73,3 +73,16 @@ salsa 以外にも、ddtss という翻訳のプラットフォームがある�
         - トリガー起動するが、runner  用の \*.yml が存在しないため
         - ホストの URL は1 つにしたほうが良いので、CI による検証はせずに merge した
 
+    * 更新したあとは
+        ```
+        make clean && make updatepo
+        ```
+        した後に、\#,fuzzy キーワードを削除して 
+        ```
+        make html LINGUA=ja architecture=amd64
+        ```
+
+        このキーワードは、原文で変更があった場合に差分をある部分に挿入される。
+
+        
+
